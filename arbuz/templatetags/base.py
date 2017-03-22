@@ -1,5 +1,5 @@
 from inspect import getmembers, ismethod
-from product.base import *
+from arbuz.base import *
 from django import template
 register = template.Library()
 

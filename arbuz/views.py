@@ -1,5 +1,4 @@
 from session.views import *
-from payment.base import *
 from dialog.views import *
 
 from abc import ABCMeta, abstractmethod
@@ -112,12 +111,6 @@ class Checker(Dynamic_Base):
             if self.request.session['root_login']:
                 return True
             return False
-
-        return True
-
-    def Check_Payment(self):
-        self.payment_models_manager = \
-            Payment_Models_Manager(self.request)
 
         return True
 
