@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from translator.views import *
 from base64 import b64encode
 from arbuz.templatetags.base import *
 
@@ -28,16 +27,6 @@ class Other_Manager(Base_Tag_Manager):
         redirect_url = redirect_url.decode('utf-8')
         return '{0}redirect/{1}/'.format(url_name, redirect_url)
 
-    def Get_Text_In_Current_Language(self):
-        pk = self.values['pk']
-        language = self.values['language']
-        return Text(self.request, pk, language)
-
-    def Get_App_Name(self):
-        app_name = self.request.session['arbuz_app']
-        pk = Language_EN.objects.get(value=app_name).pk
-        return Text(self.request, pk).replace('.', ' ').title()
-
 
 
 @register.simple_tag(takes_context=True)
@@ -65,23 +54,3 @@ def redirect(context, url_name, redirect_url=None, *args, **kwargs):
     }
 
     return Other_Manager(task, values, request).OUT
-
-@register.simple_tag(takes_context=True)
-def text(context, pk, language=None):
-
-    task = 'Get_Text_In_Current_Language'
-    request = context['request']
-    values = {
-        'pk': pk,
-        'language': language
-    }
-
-    return Other_Manager(task, values, request).OUT
-
-@register.simple_tag(takes_context=True)
-def get_app_name(context):
-
-    task = 'Get_App_Name'
-    request = context['request']
-
-    return Other_Manager(task, {}, request).OUT
