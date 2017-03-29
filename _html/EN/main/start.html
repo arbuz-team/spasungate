@@ -1,13 +1,28 @@
-{% load staticfiles %}
-{% load tags %}
 
-<div class="ground-block block-1 start">
-
-    <div class="block-background fill-abs"></div>
-
-    <div class="block-content">
+{% include "arbuz/html/admission.html" %}
+<!------------- Container - start -------------->
 
 
-    </div><!-- block-content -->
+<!-- Header -->
+{% include "header/html/_organism.html" %}
 
-</div><!-- ground-block -->
+<!-- Content -->
+{% include "ground/html/main_start.html" %}
+
+    <div class="ground-block block-1 start">
+
+        <div class="block-background fill-abs"></div>
+
+        <div class="block-content">
+
+
+        </div><!-- block-content -->
+
+    </div><!-- ground-block -->
+
+{% include "ground/html/main_end.html" %}
+
+
+<!------------- Container - end -------------->
+{% include "arbuz/html/ending.html" %}
+

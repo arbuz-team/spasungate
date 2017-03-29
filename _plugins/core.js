@@ -3,9 +3,9 @@
  */
 
 // import './autosize-master/dist/autosize';
-import './arbuz/js/base';
-import './arbuz/js/http_request';
-import * as page_controller from './arbuz/js/controllers';
-
-page_controller.start();
+// import './arbuz/js/base';
+// import './arbuz/js/http_request';
+// import * as page_controller from './arbuz/js/controllers';
+//
+// page_controller.start();
 

@@ -1,33 +1,5 @@
-{% load staticfiles %}
-{% load tags %}
 
     </div>
-
-    <script>
-        window.DATA = {};
-        window.DATA.dictionary = {
-            '/cart/':           '',
-            '/searcher/':       '',
-            '/navigation/':     '{% url "navigation.start" %}',
-            'Sending...':       '',
-            'Waiting...':       '',
-            'It\'s done!':      '',
-            'Error / Resend':   '',
-            'Show addresses':   '',
-            'Get invoice':      '',
-            'Close':            '',
-            'Clear filters':    ''
-        };
-    </script>
-
-    <script type="text/javascript" src="{% static 'js/jquery-3.1.1.min.js' %}" charset="utf-8"></script>
-
-    {% comment %}
-        <script type="text/javascript" src="{% static 'js/hammer.min.js' %}" charset="utf-8"></script>
-        <script type="text/javascript" src="{% static 'js/jquery.hammer.js' %}" charset="utf-8"></script>
-    {% endcomment %}
-
-    <script type="text/javascript" src="{% static 'js/bundle.js' %}?3" charset="utf-8"></script>
 
   </body>
 
