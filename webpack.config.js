@@ -1,12 +1,14 @@
 "use strict";
 
-var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var
+    ExtractTextPlugin = require('extract-text-webpack-plugin'),
+    base_path = './client/';
 
 module.exports = {
-  entry: './_plugins/_sandbox.js',
+  entry: base_path + 'sandbox.js',
   output: { 
     path: __dirname, 
-    filename: './_static/js/bundle.js'
+    filename: base_path + 'static/js/bundle.js'
   },
   devtool: "source-map",
   module: {
@@ -30,6 +32,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new ExtractTextPlugin("./_static/style/app.css")
+    new ExtractTextPlugin(base_path + 'static/css/bundle.css')
   ]
 };

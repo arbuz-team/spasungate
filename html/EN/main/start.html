@@ -1,28 +1,32 @@
 
-{ include "arbuz/html/admission.html" }
+{% include "EN/_organisms/_admission.html" %}
 <!------------- Container - start -------------->
 
 
-<!-- Header -->
-{ include "header/html/_organism.html" }
+    <!-- Header -->
+    {% include "EN/_organisms/header.html" %}
 
-<!-- Content -->
-{ include "ground/html/main_start.html" }
+    <!-- Content -->
+    {% include "EN/_organisms/ground_start.html" %}
 
-    <div class="ground-block block-1 start">
+        <div class="ground-block block-1 start">
 
-        <div class="block-background fill-abs"></div>
+            <div class="block-background fill-abs"></div>
 
-        <div class="block-content">
+            <div class="block-content">
 
+                Ground loading...
 
-        </div><!-- block-content -->
+            </div><!-- block-content -->
 
-    </div><!-- ground-block -->
+        </div><!-- ground-block -->
 
-{ include "ground/html/main_end.html" }
+    {% include "EN/_organisms/ground_end.html" %}
+
+    <!-- Footer -->
+    {% include "EN/_organisms/footer.html" %}
 
 
 <!------------- Container - end -------------->
-{ include "arbuz/html/ending.html" }
+{% include "EN/_organisms/_ending.html" %}
 

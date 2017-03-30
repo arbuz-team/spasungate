@@ -1,4 +1,4 @@
-{% load staticfiles %}
+<!-- {% load staticfiles %} -->
 <!DOCTYPE html>
 <html lang="pl">
 
@@ -13,17 +13,17 @@
 
     <meta name="description" content="{{ request.session.meta_tag.description }}" />
 
-    <meta property="og:title"           content="Arbuz Team" />
+    <meta property="og:title"           content="Language cards" />
     <meta property="fb:app_id"          content="" />
     <meta property="og:type"            content="{{ request.session.meta_tag.og_type }}" />
     <meta property="og:url"             content="{{ request.session.meta_tag.og_url }}" />
     <meta property="og:image"           content="{{ request.session.meta_tag.og_image }}" />
     <meta property="og:description"     content="http://arbuz.team/" />
 
-    <link rel="author" href="https://www.facebook.com/AsBhp/?fref=ts" />
+    <link rel="author" href="https://www.facebook.com/ArbuzTeam/" />
     <!--<link rel="shortcut icon" href="" />-->
 
-    <link rel="stylesheet" href="{% static 'style/app.css' %}?5" />
+    <link rel="stylesheet" href="{% static 'css/bundle.css' %}?1" />
 
 </head>
 

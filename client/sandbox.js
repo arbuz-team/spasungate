@@ -1,8 +1,8 @@
 //noinspection JSUnresolvedFunction
-require( '../_plugins/core.sass' );
+require( './css/core.sass' );
 
 //noinspection JSUnresolvedFunction
 window.viewability = (
-  () => require( '../_plugins/core.js' )
+  () => require( './js/core.js' )
 )();
 
