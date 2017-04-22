@@ -1,0 +1,168 @@
+// -----------------------------------------
+//			  DEFINIOWANIE ZMIENNYCH
+// -----------------------------------------
+
+$ground--background-color: $G-COLOR-4
+$ground--color: $G-COLOR-0
+$ground--border-color: transparent
+
+
+//-----------------------------------------
+//			  ELEMENTY TREŚCI
+//-----------------------------------------
+
+
+#GROUND::before
+  box-sizing: border-box
+  position: absolute
+  left: 0
+  top: 0
+  right: 0
+  height: 8px
+  //border-bottom: $G-STYLE-BORDER-BOLD
+  background: $header--background-color
+  content: ''
+  z-index: 200
+
+#GROUND
+  position: relative
+  display: block
+
+.ground
+  top: 8px
+
+  overflow-y: visible
+  background-color: $G-COLOR-3
+
+
+  >.block-1
+    border-bottom: 1px solid $ground--border-color
+
+
+.ground-block
+  position: relative
+  display: block
+  margin: 0
+  padding:
+    top: 20px
+    bottom: 50px
+
+  width: 100%
+  min-height: 300px
+
+
+  >.block-title
+    position: relative
+    z-index: 12
+    margin-bottom: 50px
+
+    border-bottom: 1px solid #CCC
+    text-align: center
+
+    >div
+      display: inline-block
+      position: relative
+      top: 22px
+
+      background-color: $G-COLOR-4
+      color: $ground--color
+      font-size: 18px
+      font-weight: bold
+
+      padding: 8px 15px
+      border: 1px solid #CCC
+        radius: 5px
+
+
+  >.block-content, >.block-content-message
+    position: relative
+    padding: 10px 15px
+    z-index: 12
+
+    color: $ground--color
+    font-size: 16px
+
+  .block-content-message
+    color: $G-COLOR-1
+    font-weight: bold
+    font-size: 18px
+
+  >.block-background
+    z-index: 10
+    background-color: $ground--background-color
+
+
+  >.block-2 > .block-background
+    background-color: $ground--background-color
+
+
+.block-content
+
+  .title, .subtitle
+    padding: 10px 0
+
+    font-weight: bold
+    opacity: .92
+
+
+  .title
+    margin:
+      top: 15px
+      bottom: 10px
+
+    font-size: 18px
+    text-align: center
+    border-bottom: 1px solid #eee
+
+
+  .subtitle
+    padding:
+      left: 5px
+      right: 5px
+    margin: 10px 0
+
+    font-size: 15px
+
+
+  .paragraph
+    margin-bottom: 15px
+    margin-left: 15px
+
+
+
+.block-content
+  position: relative
+  padding: 10px 15px
+  z-index: 12
+
+.block-background
+  z-index: 10
+
+//-----------------------------------------
+//				EKRAN KOMPUTERA
+//-----------------------------------------
+
+//@media (min-width: $G-SIZE-1)
+
+
+@media (min-width: $G-SIZE-2)
+
+  .ground-block
+    padding-bottom: 30px
+
+
+//@media (min-width: $G-SIZE-3)
+
+  #GROUND
+    margin-left:
+
+
+//@media (min-width: $G-SIZE-4)
+
+
+
+//-----------------------------------------
+//	EKRAN KOMPUTERA z wysuniętym koszykiem
+//-----------------------------------------
+
+//@media (min-width: $G-SIZE-5)

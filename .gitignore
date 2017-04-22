@@ -6,4 +6,5 @@ update_settings.sh
 update_settings_outside.sh
 *migrations*
 node_modules/*
+package.json
 *.directory
