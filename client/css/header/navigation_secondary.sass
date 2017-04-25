@@ -24,7 +24,7 @@ $header-navigation-secondary--background-color: $G-COLOR-4
     padding:
       top: 10px
       left: 17px
-      right: 25px
+      right: 20px
 
     background-color: $header--background-color
     color: $header--color
@@ -56,17 +56,19 @@ $header-navigation-secondary--background-color: $G-COLOR-4
           font-weight: bold
           cursor: pointer
 
-    //.navigation-secondary-searcher
-      >div >i
-        display: inline-block
-        position: relative
-        top: 2px
 
-        width: 15px
-        height: 15px
-        margin-right: 3px
+.navigation-secondary
 
-        +background-img( url(/static/img/icons/32/light/searcher.png), 100%, center)
+  .flag
+    display: inline-block
+    width: 30px
+
+  .flag_pl
+    +background-img( url(/static/img/flags/pl_PL.png), 100%, center)
+  .flag_en
+    +background-img( url(/static/img/flags/uk_UK.png), 100%, center)
+  .flag_de
+    +background-img( url(/static/img/flags/de_DE.png), 100%, center)
 
 
 @media (min-width: $G-SIZE-3)

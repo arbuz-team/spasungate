@@ -259,7 +259,7 @@ div:hover > .buttons_to_action {
     height: 50px;
     padding-top: 10px;
     padding-left: 17px;
-    padding-right: 25px;
+    padding-right: 20px;
     background-color: #ffffff;
     color: #382B1B;
     z-index: 70; }
@@ -277,6 +277,28 @@ div:hover > .buttons_to_action {
           position: relative;
           font-weight: bold;
           cursor: pointer; } }
+
+.navigation-secondary .flag {
+  display: inline-block;
+  width: 30px; }
+
+.navigation-secondary .flag_pl {
+  background-image: url(/static/img/flags/pl_PL.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.navigation-secondary .flag_en {
+  background-image: url(/static/img/flags/uk_UK.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.navigation-secondary .flag_de {
+  background-image: url(/static/img/flags/de_DE.png);
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 @media (min-width: 1000px) {
   #HEADER > .header > .navigation-secondary .navigation-secondary-searcher, #HEADER > .header > .navigation-secondary .navigation-secondary-space.for_searcher {
