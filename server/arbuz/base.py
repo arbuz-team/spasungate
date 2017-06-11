@@ -69,7 +69,7 @@ class Dynamic_Base:
         {
             'en': reverse(name, urlconf='server.arbuz.urls.en', kwargs=kwargs),
             'pl': reverse(name, urlconf='server.arbuz.urls.pl', kwargs=kwargs),
-            # 'de': reverse(name, urlconf='server.arbuz.urls.de', kwargs=kwargs),
+            'de': reverse(name, urlconf='server.arbuz.urls.de', kwargs=kwargs),
         }
 
         if language:
